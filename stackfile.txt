@@ -1,0 +1,47 @@
+import { useCallback, useEffect, useState } from "react";
+import { useConnect } from "@stacks/connect-react";
+import { StacksMocknet } from "@stacks/network";
+import styles from "../styles/Home.module.css";
+
+import {
+  AnchorMode,
+  standardPrincipalCV,
+  callReadOnlyFunction,
+  makeStandardSTXPostCondition,
+  FungibleConditionCode
+} from "@stacks/transactions";
+import { userSession } from "./ConnectWallet";
+import useInterval from "@use-it/interval";
+
+const ContractCallGm = () => {
+  const { doContractCall } = useConnect();
+  const [ post, setPost ] = useState("");
+  const [ hasPosted, setHasPosted ] = useState(false);
+
+  function handleGm() {
+    const postConditionAddress = userSession.loadUserData().profile.stxAddress.testnet;
+    const postConditionCode = FungibleConditionCode.LessEqual;
+    const postConditionAmount = 1 * 1000000;
+    doContractCall({
+      network: new StacksMocknet(),
+      anchorMode: AnchorMode.Any,
+      contractAddress: "",
+      contractName: "",
+      functionName: "mint",
+      functionArgs: [],
+      postConditions: [
+        makeStandardSTXPostCondition(
+          postConditionAddress,
+          postConditionCode,
+          postConditionAmount
+        )
+      ],
+      onFinish: (data) => {
+        console.log("onFinish:", data);
+        console.log("Explorer:", `localhost:8000/txid/${data.txId}?chain=testnet`)
+      },
+      onCancel: () => {
+        console.log("onCancel:", "Transaction was canceled");
+      },
+    });
+  }

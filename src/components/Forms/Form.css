@@ -1,0 +1,33 @@
+form .forminput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #fff;
+}
+form{
+    width: 25rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: rgb(255, 81, 0) 0px 3px 8px;
+}
+.form-section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form h3{
+    color: rgb(255, 81, 0);
+}
+input, select{
+    height: 2.5rem;
+    padding-left: .5rem;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 81, 0);
+    outline: none;
+}
+input:focus, select:focus{    
+    border: 3px solid rgb(255, 81, 0);    
+}

@@ -1,0 +1,129 @@
+/* .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.box-wallet, .card2, .referral{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    border-radius: 20px;
+    background: #77ffed;
+    padding: 2rem !important;
+    width: 100% !important;
+}
+
+.box-wallet h4, .card2 h4{
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    font-weight: 300;
+}
+.box-wallet h4 span{
+    font-size: 24px;
+    font-weight: 600;
+}
+.box-wallet button{
+    width: 100%;
+    font-size: 18px;
+    padding: 5px ;
+    border-radius: 5px;
+    border: none;
+    background: #71ceda;
+}
+.btn-bake{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-bake button{
+    width: 45%;
+}
+hr{
+width: 100%;
+} */
+/* wallet */
+/* .logo{
+   margin: 2rem 0 0 0 !important;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    color: rgb(23, 66, 66);
+}
+.logo img{
+    width: 6rem;
+}
+
+.wallet-btn button{
+    font-size: 20px;
+    letter-spacing: 2px;
+    background: #378e87;
+    border: none;
+    box-shadow: rgba(0, 0, 0.5, 0.5) 0px 20px 30px;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-weight: 700;   
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    color: rgb(206, 244, 255);
+}
+.heading h4{
+    margin: 1rem 0;
+    font-weight:400;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+input{
+    width: 98%;
+    padding: .3rem 0;
+    font-size: 22px !important;
+    margin: 0 0 1rem 0 !important;
+    background:  #77ffed;
+    border: 1px solid #378e87;
+}
+.referral input{
+    padding: 0;
+}
+.rewards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.card2, .referral{
+    margin-top: 2rem !important;
+}
+.card2 h4{
+    line-height: 1.5;    
+}
+.icons{
+    display: flex;
+    margin-left: -8rem;
+}
+.icons i{
+font-size: 30px;
+background: rgb(23,33,94);
+padding: 0px 8px 5px 7px;
+border-radius: 50%;
+margin: 2rem;
+color: rgb(46, 162, 164);
+}
+.icons img{
+    margin-right: 2rem;
+}
+@media (max-width: 992px) {
+.wallet-btn button{
+    width: 97%;
+    margin:0 0 1rem 0;
+}
+
+.wallet-btn button{
+    position: static;
+    top: 0;
+}
+.icons{
+    margin-left: 3rem;
+}
+} */

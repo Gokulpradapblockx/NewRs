@@ -1,0 +1,9 @@
+.Connect{
+    background-color: black;
+    width: 11rem;
+    height: 3rem;
+    margin: 0 1rem;
+    overflow: hidden;
+    padding: 0 0 0 .4rem ;
+    color: #fff;
+}

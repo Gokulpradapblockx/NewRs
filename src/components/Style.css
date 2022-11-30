@@ -1,0 +1,36 @@
+.container-fluid{
+    background-color: black;
+    min-height: 100vh;
+}
+section{
+    width: 100%;
+    height: 100%;
+    margin: 9rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button{
+    color: #fff;
+    background: rgb(243, 112, 41);
+    padding: .5rem 0;
+    width: 10rem;
+    font-weight: 600;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+    text-transform: capitalize !important;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.entry-page h3{
+    padding: 3rem 0;
+color: rgb(243, 112, 41);
+
+}
